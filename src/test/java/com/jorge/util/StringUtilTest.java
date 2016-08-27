@@ -15,23 +15,7 @@ public class StringUtilTest {
 	 * simulate complicated dependencies, such as an SMTP method, the SMTP server behind it, or a REST
 	 * service.
 	 * 
-	 * It's easy to test whether the method was called exactly twice with String parameters:
-	 *		Mockito.verify(stringUtilMock,
-	 *		VerificationModeFactory.times(2)).concat(Mockito.anyString(),
-	 *		Mockito.anyString());
-	 *		
-	 * Mockito offers many other similar methods:
-	 *		VerificationModeFactory.atLeastOnce()
-	 *		VerificationModeFactory.atLeast(minNumberOfInvocations)
-	 *		VerificationModeFactory.atMost(maxNumberOfInvocations)
-	 *		Mockito.anyObject()
-	 *		Mockito.any(class)
-	 *		Mockito.anyListOf(class)
-	 *		
-	 * It's also possible, at a given point, to reset the mock object's programmed behavior:
-	 *		Mockito.reset(stringUtilMock);
-	 *		
-	 * For a more extensive list of Mockito's features, refer to
+	 * For more Mockito's features:
 	 *		http://mockito.github.io/mockito/docs/current/org/mockito/Mockito.html
 	 *
 	 */
