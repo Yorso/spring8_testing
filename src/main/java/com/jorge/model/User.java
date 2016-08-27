@@ -1,13 +1,18 @@
 package com.jorge.model;
 
-import java.util.LinkedList;
-
 public class User {
 	
 		private Long id;
 		private String firstName;
 		private Integer age;
-		private LinkedList<Post> posts = new LinkedList<Post>(); // Retrieving a list of objects with their dependencies
+		
+		public User(){
+		}
+		
+		public User(String firstName, Integer age){
+			this.firstName = firstName;
+			this.age = age;
+		}
 		
 		public Long getId() {
 			return id;
@@ -26,12 +31,6 @@ public class User {
 		}
 		public void setAge(Integer age) {
 			this.age = age;
-		}
-		public LinkedList<Post> getPosts() {
-			return posts;
-		}
-		public void setPosts(LinkedList<Post> posts) {
-			this.posts = posts;
 		}
 		
 }

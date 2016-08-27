@@ -38,6 +38,10 @@ public class UserDAO {
 		return userList;
 	}
 	
+	public void add(User user) {
+		String sql = "insert into user (first_name, age) values (?, ?)";
+		jdbcTemplate.update(sql, user.getFirstName(), user.getAge());
+	}
 	
 	/********************
 	 *  INLINE CLASSES  *
