@@ -30,7 +30,7 @@ import com.jorge.model.User;
 @RunWith(SpringJUnit4ClassRunner.class) // Executes the test with the Spring runner instead of the default JUnit runner. A runner is a class that runs a JUnit test
 @ContextConfiguration(classes = {AppConfig.class}) // Loads the Spring configuration class and makes the class's beans available
 @WebAppConfiguration // Prevents exceptions from being raised. Without it, @EnableWebMvc (in theSpring configuration) would raise the "A ServletContext is required to configure default servlet handling" exception
-@Transactional // Necessary in JUnit
+@Transactional // Necessary in JUnit to testing transactions
 public class UserDAOJUnitTest {
 
 	@Autowired
