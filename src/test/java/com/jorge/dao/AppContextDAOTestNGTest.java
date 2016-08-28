@@ -1,4 +1,4 @@
-package com.jorge.controller;
+package com.jorge.dao;
 
 import java.util.List;
 
@@ -32,7 +32,7 @@ import com.jorge.model.User;
  */
 @ContextConfiguration(classes = {AppConfig.class}) // Loads the Spring configuration file in Spring's context
 @WebAppConfiguration // Prevents exceptions from being raised. Without it, @EnableWebMvc (in theSpring configuration) would raise the "A ServletContext is required to configure default servlet handling" exception.
-public class TestControllerTestNGTest extends AbstractTestNGSpringContextTests{ // Extending AbstractTestNGSpringContextTests initializes Spring's context and makes it available to the test class
+public class AppContextDAOTestNGTest extends AbstractTestNGSpringContextTests{ // Extending AbstractTestNGSpringContextTests initializes Spring's context and makes it available to the test class
 
 	@Autowired
 	private UserDAO userDAO;
