@@ -61,7 +61,7 @@ public class StringControllerTest extends AbstractTestNGSpringContextTests{ // "
 	 */
 	@Test
 	public void testTest1() throws Exception {
-		this.mockMvc.perform(post("/concat").param("a", "red").param("b", "apple")) // POST request
+		this.mockMvc.perform(post("/concat").param("a", "red").param("b", "apple")) // POST request. In controller method it could be GET request and test it with POST request. Check concat() method in StringController.java
 		//this.mockMvc.perform(get("/concat").param("a", "red").param("b", "apple")) // GET request
 		.andExpect(status().isOk())
 		.andExpect(model().attribute("result", "redapple"))
