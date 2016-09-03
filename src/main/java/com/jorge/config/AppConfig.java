@@ -16,11 +16,8 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
-import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
-import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
 
 @Configuration
 @EnableWebMvc
